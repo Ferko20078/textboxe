@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-   <link rel="Website icon" href="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/link-hyperlink-icon.png">
-    
+    <link rel="Website icon" href="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/link-hyperlink-icon.png">
     <title>Link.az</title>
 
     <style>
@@ -2143,12 +2142,15 @@ img{
 
         //language
 
-        document.getElementById('lang');
-
         function hide() {
-    const language = document.getElementById('lg');
-    language.style.display = language.style.display === 'none' ? 'block' : 'none';
-}
+          var x = document.getElementById("lg")
+          if(x.style.display ==="block"){
+            x.style.display = "none";
+          }
+          else{
+            x.style.display = "block";
+          }
+        }
 
 
 
@@ -2209,8 +2211,14 @@ document.getElementById('user-input').addEventListener('keypress', function(e) {
 });
 
 function toggleChatbot() {
-    const chatbotPopup = document.getElementById('chatbot-popup');
-    chatbotPopup.style.display = chatbotPopup.style.display === 'none' ? 'block' : 'none';
+    var chatbotPopup = document.getElementById('chatbot-popup')
+    if (chatbotPopup.style.display === "block"){
+      chatbotPopup.style.display = "none";
+    }
+    else{
+      chatbotPopup.style.display = "block";
+    }
+    
 }
 
 function sendMessage() {
